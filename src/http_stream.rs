@@ -1,9 +1,5 @@
-use http;
-use httparse;
-use std;
-
-use errors::*;
-use RequestHead;
+use crate::errors::*;
+use crate::RequestHead;
 
 // relevant: https://stackoverflow.com/questions/686217/maximum-on-http-header-values#686243
 const MAX_HEADER_SIZE: usize = 4096;
