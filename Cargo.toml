@@ -17,13 +17,10 @@ slab = "0.4"
 httparse = "1"
 http = "0.1"
 log = "0.4"
+
+[dev-dependencies]
+chrono = "0.4.19"
 simple_logger = "2.1"
 
 [[example]]
-name = "hello"
-
-[[example]]
-name = "hello_wasi"
-
-[[example]]
-name = "echo"
+name = "hello_enarx"

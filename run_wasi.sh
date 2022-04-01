@@ -1,2 +1,3 @@
-cargo +nightly build --target wasm32-wasi --example hello_wasi
-wasmtime run --tcplisten 127.0.0.1:3000 --env 'FD_COUNT=1' target/wasm32-wasi/debug/examples/hello_wasi.wasm
+#!/bin/sh
+export CARGO_TARGET_WASM32_WASI_RUNNER="wasmtime run --tcplisten 127.0.0.1:3000 --env FD_COUNT=1"
+exec cargo +nightly run --target wasm32-wasi --example hello_enarx
