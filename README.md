@@ -1,5 +1,7 @@
 # mini_http
 
+Be sure to update your rust stable toolchain to at least 1.60.0.
+
 ## wasmtime
 
 ```console
