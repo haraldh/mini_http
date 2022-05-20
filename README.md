@@ -12,7 +12,7 @@ Server is running on [`http://127.0.0.1:3000`](http://127.0.0.1:3000).
 
 ## enarx
 
-after installing enarx in `$PATH` with `cargo install`
+after installing [enarx](https://github.com/enarx/enarx/) in `$PATH` with `cargo install`
 
 ```console
 ❯ CARGO_TARGET_WASM32_WASI_RUNNER="enarx run --wasmcfgfile examples/Enarx.toml"  cargo run --target wasm32-wasi --example hello_enarx 
